@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAAQ - Questions and Answers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23333' stroke-width='1'%3E%3Cpath d='M25,25 L25,75 M75,25 L75,75'/%3E%3Ccircle cx='50' cy='50' r='20'/%3E%3Cpath d='M20,50 Q35,20 50,50 T80,50'/%3E%3Cpath d='M30,30 L70,70'/%3E%3Cpath d='M70,30 L30,70'/%3E%3Crect x='30' y='30' width='40' height='40' rx='5'/%3E%3Cpath d='M50,20 L50,80'/%3E%3Cpath d='M20,50 L80,50'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat;
+            opacity: 0.1;
+        }
+          /* Gradient for session buttons */
+        .session-gradient {
+            background: linear-gradient(135deg, #67b3c5 0%, #4a90e2 100%);
+        }
+    </style>
+</head>
+<body class="bg-white min-h-screen">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header Banner -->
+        <div class="relative bg-black rounded-3xl mx-4 mt-8 overflow-hidden">
+            <div class="absolute inset-0 pattern-bg"></div>
+            <div class="flex flex-col items-center justify-center py-16 px-4 relative z-10">
+                <!-- Question Mark Icon -->
+                <div class="bg-gradient-to-r from-sky-300 to-teal-200 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                    <span class="text-black text-4xl font-bold">?</span>
+                </div>
+                <!-- PAAQ Text -->
+                <h1 class="text-white text-4xl font-bold tracking-wider">PAAQ</h1>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative px-4 mt-4">
+            <!-- Person with Phone -->
+            <div class="flex justify-center mt-[-70px]">
+                <img src="./asset//banner.png" alt="Person using PAAQ app" class="w-[50%] h-[50%]">
+            </div>
+
+            <!-- Chat Bubbles -->
+            <div class="absolute bottom-20 left-24">
+                <div class="flex items-center">
+                    <div class="w-20 h-20 rounded-full  overflow-hidden ">
+                        <img src="./asset/Ellipse.png" alt="User avatar" class="w-full h-full object-cover bg-amber-700">
+                    </div>
+                    <div class="bg-teal-400 text-white px-6 py-2 rounded-full border-2 border-white mt-[-40px] ml-[-18px] position-relative z-10">
+                        <p class="font-semibold">How ?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute right-32 top-1/2">
+                <div class="flex items-center">
+                    <div class="bg-blue-400 text-white px-6 py-2 border-2 border-white rounded-full mt-[-40px] mr-[-18px] position-relative z-10 ">
+                        <p class="font-semibold">What ?</p>
+                    </div>
+                    <div class="w-20 h-20 rounded-full overflow-hidden ">
+                        <img src="./asset/Rectangle.png" alt="User avatar" class="w-full h-full object-cover bg-amber-200">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Welcome Section -->
+        <div class="bg-white rounded-3xl mx-4 mt-8 p-8 shadow-sm border border-gray-100">
+            <div class="text-center">
+                <h2 class="text-4xl font-semibold text-sky-500 mb-1">Hello Irfan,</h2>
+                <h3 class="text-4xl font-semibold text-sky-500 mb-4">Welcome to PAAQ!</h3>
+                
+                <p class="text-gray-500 mb-6">pronounced <span class="font-bold text-gray-800">"pack"</span></p>
+                
+                <h4 class="text-2xl font-bold text-gray-900 mb-8">You can do the following with your PAAQ App:</h4>
+                
+                <!-- Icons Grid -->
+                <div class="bg-gray-100 rounded-3xl p-6 mb-8 max-w-[90%] mx-auto">
+                    <div class="grid grid-cols-2 gap-8 p-4 bg-white rounded-3xl">
+                        <!-- Calendar Icon -->
+                        <div class="flex justify-center">
+                            <div class="w-20 h-20">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="10" y="25" width="80" height="65" rx="10" fill="url(#calendar-gradient)"/>
+                                    <rect x="25" y="10" width="10" height="20" rx="5" fill="#D1D5DB"/>
+                                    <rect x="65" y="10" width="10" height="20" rx="5" fill="#D1D5DB"/>
+                                    <rect x="25" y="40" width="10" height="10" rx="5" fill="white"/>
+                                    <rect x="45" y="40" width="10" height="10" rx="5" fill="white"/>
+                                    <rect x="65" y="40" width="10" height="10" rx="5" fill="white"/>
+                                    <rect x="25" y="60" width="10" height="10" rx="5" fill="white"/>
+                                    <rect x="45" y="60" width="10" height="10" rx="5" fill="white"/>
+                                    <rect x="65" y="60" width="10" height="10" rx="5" fill="white"/>
+                                    <defs>
+                                        <linearGradient id="calendar-gradient" x1="10" y1="25" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5eead4"/>
+                                            <stop offset="1" stop-color="#3b82f6"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Wallet Icon -->
+                        <div class="flex justify-center">
+                            <div class="w-20 h-20">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M80 35H20C14.4772 35 10 39.4772 10 45V75C10 80.5228 14.4772 85 20 85H80C85.5228 85 90 80.5228 90 75V45C90 39.4772 85.5228 35 80 35Z" fill="url(#wallet-gradient)"/>
+                                    <path d="M90 55H75C70.5817 55 67 58.5817 67 63C67 67.4183 70.5817 71 75 71H90V55Z" fill="url(#wallet-gradient)"/>
+                                    <circle cx="75" cy="63" r="4" fill="#1F2937"/>
+                                    <defs>
+                                        <linearGradient id="wallet-gradient" x1="10" y1="35" x2="90" y2="85" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5eead4"/>
+                                            <stop offset="1" stop-color="#3b82f6"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Video Camera Icon -->
+                        <div class="flex justify-center">
+                            <div class="w-20 h-20">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 40C10 34.4772 14.4772 30 20 30H50C55.5228 30 60 34.4772 60 40V60C60 65.5228 55.5228 70 50 70H20C14.4772 70 10 65.5228 10 60V40Z" fill="url(#video-gradient)"/>
+                                    <path d="M60 45L90 35V65L60 55V45Z" fill="url(#video-gradient)"/>
+                                    <circle cx="35" cy="50" r="5" fill="white"/>
+                                    <defs>
+                                        <linearGradient id="video-gradient" x1="10" y1="30" x2="90" y2="70" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5eead4"/>
+                                            <stop offset="1" stop-color="#3b82f6"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Clock Icon -->
+                        <div class="flex justify-center">
+                            <div class="w-20 h-20">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="50" cy="50" r="40" fill="url(#clock-gradient)"/>
+                                    <circle cx="50" cy="50" r="3" fill="white"/>
+                                    <line x1="50" y1="50" x2="50" y2="30" stroke="white" stroke-width="2"/>
+                                    <line x1="50" y1="50" x2="65" y2="50" stroke="white" stroke-width="2"/>
+                                    <circle cx="50" cy="15" r="3" fill="#1F2937"/>
+                                    <circle cx="85" cy="50" r="3" fill="#1F2937"/>
+                                    <circle cx="50" cy="85" r="3" fill="#1F2937"/>
+                                    <circle cx="15" cy="50" r="3" fill="#1F2937"/>
+                                    <line x1="50" y1="20" x2="50" y2="25" stroke="white" stroke-width="2"/>
+                                    <line x1="80" y1="50" x2="75" y2="50" stroke="white" stroke-width="2"/>
+                                    <line x1="50" y1="80" x2="50" y2="75" stroke="white" stroke-width="2"/>
+                                    <line x1="20" y1="50" x2="25" y2="50" stroke="white" stroke-width="2"/>
+                                    <defs>
+                                        <linearGradient id="clock-gradient" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#5eead4"/>
+                                            <stop offset="1" stop-color="#3b82f6"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Benefits Text -->
+                <p class="text-xl text-gray-600">
+                    Instantly get <span class="font-bold text-gray-900">Booked</span> and get <span class="font-bold text-gray-900">Paid</span> to share your Knowledge via <span class="font-bold text-gray-900">1-on-1 video sessions.</span>
+                </p>
+            </div>
+             <!-- Session Duration Selection -->
+        <div class="bg-gray-100 rounded-3xl mx-2 mt-8 p-8">
+            <div class="w-[90%] mx-auto">
+                <!-- Session Options Grid -->
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <!-- 5 min Session -->
+                    <div class="rounded-xl overflow-hidden border border-teal-300">
+                        <div class="bg-white p-4 text-center">
+                            <h3 class="text-2xl font-bold text-gray-900">5 min</h3>
+                        </div>
+                        <div class="session-gradient p-3 text-center">
+                            <p class="text-white font-medium">Snapshot</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 15 min Session -->
+                    <div class="rounded-xl overflow-hidden border border-teal-300">
+                        <div class="bg-white p-4 text-center">
+                            <h3 class="text-2xl font-bold text-gray-900">15 min</h3>
+                        </div>
+                        <div class="session-gradient p-3 text-center">
+                            <p class="text-white font-medium">Brief</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 45 min Session -->
+                    <div class="rounded-xl overflow-hidden border border-teal-300">
+                        <div class="bg-white p-4 text-center">
+                            <h3 class="text-2xl font-bold text-gray-900">45 min</h3>
+                        </div>
+                        <div class="session-gradient p-3 text-center">
+                            <p class="text-white font-medium">In-Depth</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 90 min Session -->
+                    <div class="rounded-xl overflow-hidden border border-teal-300">
+                        <div class="bg-white p-4 text-center">
+                            <h3 class="text-2xl font-bold text-gray-900">90 min</h3>
+                        </div>
+                        <div class="session-gradient p-3 text-center">
+                            <p class="text-white font-medium">Masterclass</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Session Text -->
+                <div class="text-center">
+                    <p class="text-xl text-gray-600">
+                        <span class="text-gray-500">Easily</span> <span class="font-bold text-gray-900">Set the number of sessions</span> <span class="text-gray-500">you are available to be booked anytime.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+
+      
+    </div>
+</body>
+</html>
