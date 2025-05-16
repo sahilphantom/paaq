@@ -15,6 +15,10 @@
         .session-gradient {
             background: linear-gradient(135deg, #67b3c5 0%, #4a90e2 100%);
         }
+                /* Gradient for verification badge */
+        .verification-gradient {
+            background: linear-gradient(135deg, #67b3c5 0%, #4a90e2 100%);
+        }
     </style>
 </head>
 <body class="bg-white min-h-screen">
@@ -219,7 +223,160 @@
                 </div>
             </div>
         </div>
+          <!-- Verification Section -->
+        <div class="bg-gray-100 rounded-3xl mx-4 mt-8 p-8">
+            <div class="max-w-md mx-auto">
+                <!-- Verification Badge -->
+                <div class="flex justify-center mb-8">
+                    <div class="  flex items-center justify-center">
+                        <img src="./asset/tickmark.png" alt="Verified" class="w-20 h-20">
+                        <!-- <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.8995 10.9C20.3995 10.5 20.0995 9.9 20.0995 9.3C20.0995 8.7 20.2995 8.1 20.7995 7.7C21.2995 7.3 21.4995 6.6 21.2995 6C21.0995 5.4 20.6995 4.9 20.0995 4.7C19.4995 4.5 19.0995 4.1 18.8995 3.5C18.6995 2.9 18.7995 2.3 19.0995 1.8C19.3995 1.3 19.3995 0.7 18.9995 0.3C18.5995 -0.1 17.9995 -0.1 17.4995 0.2C16.9995 0.5 16.3995 0.6 15.7995 0.4C15.1995 0.2 14.7995 -0.2 14.5995 -0.8C14.3995 -1.4 13.8995 -1.8 13.2995 -1.8H12.7995C12.1995 -1.8 11.6995 -1.4 11.4995 -0.8C11.2995 -0.2 10.8995 0.2 10.2995 0.4C9.69948 0.6 9.09948 0.5 8.59948 0.2C8.09948 -0.1 7.49948 -0.1 7.09948 0.3C6.69948 0.7 6.69948 1.3 6.99948 1.8C7.29948 2.3 7.39948 2.9 7.19948 3.5C6.99948 4.1 6.59948 4.5 5.99948 4.7C5.39948 4.9 4.99948 5.4 4.79948 6C4.59948 6.6 4.79948 7.3 5.29948 7.7C5.79948 8.1 5.99948 8.7 5.99948 9.3C5.99948 9.9 5.69948 10.5 5.19948 10.9C4.69948 11.3 4.49948 12 4.69948 12.6C4.89948 13.2 5.29948 13.7 5.89948 13.9C6.49948 14.1 6.89948 14.5 7.09948 15.1C7.29948 15.7 7.19948 16.3 6.89948 16.8C6.59948 17.3 6.59948 17.9 6.99948 18.3C7.19948 18.5 7.49948 18.6 7.79948 18.6C7.99948 18.6 8.29948 18.5 8.49948 18.4C8.99948 18.1 9.59948 18 10.1995 18.2C10.7995 18.4 11.1995 18.8 11.3995 19.4C11.5995 20 12.0995 20.4 12.6995 20.4H13.1995C13.7995 20.4 14.2995 20 14.4995 19.4C14.6995 18.8 15.0995 18.4 15.6995 18.2C16.2995 18 16.8995 18.1 17.3995 18.4C17.5995 18.5 17.8995 18.6 18.0995 18.6C18.3995 18.6 18.6995 18.5 18.8995 18.3C19.2995 17.9 19.2995 17.3 18.9995 16.8C18.6995 16.3 18.5995 15.7 18.7995 15.1C18.9995 14.5 19.3995 14.1 19.9995 13.9C20.5995 13.7 20.9995 13.2 21.1995 12.6C21.4995 12 21.2995 11.3 20.8995 10.9Z" fill="white"/>
+                            <path d="M10.5 13.5L8.5 11.5C8.1 11.1 7.5 11.1 7.1 11.5C6.7 11.9 6.7 12.5 7.1 12.9L9.8 15.6C10 15.8 10.3 15.9 10.5 15.9C10.7 15.9 11 15.8 11.2 15.6L17.2 9.6C17.6 9.2 17.6 8.6 17.2 8.2C16.8 7.8 16.2 7.8 15.8 8.2L10.5 13.5Z" fill="white"/>
+                        </svg> -->
+                    </div>
+                </div>
+                
+                <!-- Profile Images -->
+                <div class="flex justify-center items-center rounded-full bg-white p-2 border-2 border-gray-300 mb-8">
+                    <div class="flex space-x-[-15px]">
+                        <!-- Gray Profile Image 1 -->
+                        <div class="w-24 h-24 rounded-full overflow-hidden bg-white border-4 border-white">
+                            <img src="./asset/profile.png" alt="Profile" class="w-full h-full object-cover filter grayscale">
+                        </div>
+                        
+                        <!-- Gray Profile Image 2 -->
+                        <div class="w-24 h-24 rounded-full overflow-hidden bg-white border-4 border-white">
+                            <img src="./asset/profile.png" alt="Profile" class="w-full h-full object-cover filter grayscale">
+                        </div>
+                        
+                        <!-- Colored Profile Image (Highlighted) -->
+                        <div class="w-24 h-24 rounded-full overflow-hidden bg-white  relative z-10 ">
+                            <div class="absolute inset-0 bg-gradient-to-b from-[#67b3c5] to-[#4a90e2] opacity-20"></div>
+                            <img src="./asset/profile.png" alt="Verified Profile" class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Gray Profile Image 3 -->
+                        <div class="w-24 h-24 rounded-full overflow-hidden bg-white border-4 border-white">
+                            <img src="./asset/profile.png" alt="Profile" class="w-full h-full object-cover filter grayscale">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Verification Text -->
+                <div class="text-center">
+                    <p class="text-xl">
+                        <span class="text-gray-500">Having a</span> 
+                        <span class="font-bold text-gray-900">verified profile</span> 
+                        <span class="text-gray-500">on PAAQ helps others know the</span> 
+                        <span class="font-bold text-gray-900">real you from the fake one.</span>
+                    </p>
+                </div>
+            </div>
         </div>
+          <!-- FAQ Section -->
+        <div class="bg-gray-100 rounded-3xl mx-4 mt-8 p-8">
+            <div class="max-w-2xl mx-auto">
+                <!-- FAQ Title -->
+                <h2 class="text-4xl font-semibold text-sky-500 text-center mb-10">FAQ's</h2>
+                
+                <!-- FAQ Items -->
+                <div class="space-y-8">
+                    <!-- FAQ Item 1 -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 flex items-start mb-3">
+                            <span class="text-2xl mr-3">•</span>
+                            Do I have to pay to book 1-on-1 session with experts?
+                        </h3>
+                        <p class="text-gray-500 ml-8">
+                            Yes, booking a 1-on-1 session with an expert requires payment. Each expert sets their own pricing, so rates may vary.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 flex items-start mb-3">
+                            <span class="text-2xl mr-3">•</span>
+                            What makes PAAQ AI different from other AIs?
+                        </h3>
+                        <p class="text-gray-500 ml-8">
+                            PAAQ AI analyzes your conversations using a unique algorithm. For example, if you ask about construction, PAAQ AI can connect you with real-life construction experts.
+                        </p>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 flex items-start mb-3">
+                            <span class="text-2xl mr-3">•</span>
+                            Can someone who isn't on PAAQ book me for a 1-on-1 video session?
+                        </h3>
+                        <p class="text-gray-500 ml-8">
+                            Your profile includes a "Share Profile" button. Tap it to share your PAAQ profile with others on different platforms or save it to your phone gallery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+<!-- Footer Navigation and App Download -->
+        <div class="mt-16 px-4 ">
+            <!-- Navigation Links -->
+            <div class="flex justify-center items-center space-x-4 mb-10">
+                <a href="#" class="text-gray-600 font-medium text-lg hover:text-gray-900">FAQ's</a>
+                <span class="text-gray-400">•</span>
+                <a href="#" class="text-gray-600 font-medium text-lg hover:text-gray-900">News</a>
+                <span class="text-gray-400">•</span>
+                <a href="#" class="text-gray-600 font-medium text-lg hover:text-gray-900">Contact</a>
+            </div>
+            
+           
+
+         <!-- App Download Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <!-- Apple Store Button -->
+                <a href="#" class="inline-flex items-center border border-gray-300 rounded-full px-6 py-3 hover:bg-gray-50 transition-colors">
+                    <svg class="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.09 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-sm font-medium">Download on the</p>
+                        <p class="text-xl font-bold">Apple Store</p>
+                    </div>
+                </a>
+                
+                <!-- Google Play Button -->
+                <a href="#" class="inline-flex items-center border border-gray-300 rounded-full px-6 py-3 hover:bg-gray-50 transition-colors">
+                    <svg class="w-8 h-8 mr-3" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.18 20.83C3.05 20.73 3 20.59 3 20.4V3.6C3 3.41 3.05 3.27 3.18 3.17L12.8 12L3.18 20.83Z" fill="#EA4335"/>
+                        <path d="M13.66 12.86L3.5 21.02C3.74 21.01 3.97 20.92 4.16 20.76L15.02 14.1L13.66 12.86Z" fill="#FBBC04"/>
+                        <path d="M19.23 11.64L15.02 9.1L13.56 10.36L15.02 11.62L19.23 9.08C19.57 8.9 19.76 8.64 19.76 8.36C19.76 8.08 19.57 7.82 19.23 7.64C19.23 7.64 19.23 11.36 19.23 11.64Z" fill="#4285F4"/>
+                        <path d="M3.5 2.98C3.29 2.98 3.09 3.05 2.92 3.17L12.8 12L14.16 10.74L3.5 2.98Z" fill="#34A853"/>
+                    </svg>
+                    <div class="text-left">
+                        <p class="text-sm font-medium">GET IT ON</p>
+                        <p class="text-xl font-bold">Google Play</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Personal Message -->
+            <div class="text-center mb-8">
+                <p class="text-gray-500">This email was intended for @irfan, because you signed up to PAAQ.</p>
+            </div>
+            
+            <!-- Copyright and Legal -->
+            <div class="text-center text-gray-500 space-y-4 mb-8">
+                <p>© 2025 PAAQ App Limited. All rights reserved.</p>
+                <p>The PAAQ name, logo and related marks are trademark of PAAQ App Limited.</p>
+            </div>
+            
+            <!-- Address -->
+            <div class="text-center text-gray-500 mb-12">
+                <p>The Black Church, St. Mary's Place, Dublin 7, Dublin, D07 P4AX, Ireland.</p>
+            </div>
+        </div>
+    </div>
 
         
 
